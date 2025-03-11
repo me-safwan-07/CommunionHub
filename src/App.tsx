@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ToastProvider } from './components/ui/Toast';
+import { ToastProvider, ToastViewport } from './components/ui/Toast';
 import { Navigation } from './components/Navigation';
 import { AnimatePresence } from 'framer-motion';
 import { Home } from './pages/Home';
+import { Footer } from './components/Footer';
 
 
 
@@ -19,6 +20,8 @@ const App = () => {
               </Routes>
             </AnimatePresence>
           </main>
+          <Footer />
+          <ToastViewport />
         </div>
       </ToastProvider>
     </BrowserRouter>
