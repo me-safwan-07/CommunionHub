@@ -4,6 +4,7 @@ import { Navigation } from './components/Navigation';
 import { AnimatePresence } from 'framer-motion';
 import { Home } from './pages/Home';
 import { Footer } from './components/Footer';
+import { Events } from './pages/Events';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
             <AnimatePresence mode='wait'>
               <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/events' element={<Events />} />
               </Routes>
             </AnimatePresence>
           </main>
