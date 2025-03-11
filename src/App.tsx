@@ -1,14 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastProvider } from './components/ui/Toast';
+import { Navigation } from './components/Navigation';
 
-import { Button } from "./components/ui/button"
-import { Progress } from "./components/ui/progress"
 
 
 const App = () => {
   return (
-    <div className="p-5 space-y-2 bg-gray-100">
-      <Button>Click me</Button>
-      <Progress value={33} />
-    </div>
+    <BrowserRouter>
+      <ToastProvider>
+        <div className="min-h-screen bg-gray-50 flex flex-col">
+          <Navigation />
+        </div>
+      </ToastProvider>
+    </BrowserRouter>
   )
 }
 
