@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
 import { ToastProvider, ToastViewport } from './components/ui/Toast';
 import { Navigation } from './components/Navigation';
-import { AnimatePresence } from 'framer-motion';
 import { Home } from './pages/Home';
 import { Footer } from './components/Footer';
 import { Events } from './pages/Events';
-
-
+import { About } from './pages/About';
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/events' element={<Events />} />
+                <Route path='/about' element={<About />} />
               </Routes>
             </AnimatePresence>
           </main>
