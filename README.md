@@ -1,51 +1,130 @@
-# React + TypeScript + Vite
+# CommunionHub - React Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📜 Overview
+**CommunionHub** is a modern React web application designed to connect people of all faiths through events and community support. The application allows users to view events, filter them by category, and add new events with relevant details.
 
-Currently, two official plugins are available:
+This project was developed using the following technologies:
+- **React + Vite** for the frontend.
+- **TypeScript** for type safety.
+- **Tailwind CSS + Shadcn** for styling and modern UI components.
+- **Framer Motion** for smooth transitions and animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app has two primary pages:
+1. **Home Page**: Displays an introduction to CommunionHub and encourages users to explore events.
+2. **Event Listing Page**: Allows users to view, filter, and add new events.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Features
+### ✅ Home Page
+- Hero section with a clear message and CTA button to navigate to the Events Page.
+- Responsive design compatible with desktop and mobile.
+- Modern design using **Shadcn UI components**.
 
-- Configure the top-level `parserOptions` property like this:
+### ✅ Event Listing Page
+- Displays a list of events with essential details: Title, Date, Location, and Description.
+- Allows filtering events by category: **Religious, Social, Charity**.
+- Provides an easy form to add new events.
+- Pinning important events to stay on top.
+- Smooth animations using **Framer Motion**.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### ✅ Add Event Form
+- Input validation using **Zod + React Hook Form**.
+- Form fields include: Title, Date, Location, Description, and Category.
+- Allows editing and deleting events.
+- Events persist using **localStorage**.
+
+---
+
+## 📂 Project Structure
+The project is organized as follows:
+```
+src/
+│
+├── components/      --> Reusable UI components.
+│   ├── event/       --> Event-specific components (Card, Dialog, Filters).
+│   ├── ui/          --> Core UI elements like Button, Card, Dialog.
+│
+├── pages/           --> Application pages (Home, Events, About).
+├── types/           --> Type definitions for events.
+├── lib/             --> Utility functions and form validations.
+│
+├── App.tsx          --> Main application component.
+├── index.css        --> Tailwind CSS styling.
+├── main.tsx         --> Application entry point.
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 💻 Installation
+To run the project locally, follow these steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+1. Clone the repository:
 ```
-# vite-react-tailwindcss-shadcn-project-starter
+git clone https://github.com/your-username/communionhub.git
+```
+
+2. Navigate to the project directory:
+```
+cd communionhub
+```
+
+3. Install dependencies:
+```
+npm install
+```
+
+4. Run the development server:
+```
+npm run dev
+```
+
+5. Open the application in your browser at:
+```
+http://localhost:5173
+```
+
+---
+
+## 🎉 Deployment
+The project is easily deployable on platforms like **Vercel** or **Netlify**.
+
+### Deploy to Vercel
+1. Push your code to a GitHub repository.
+2. Go to [Vercel](https://vercel.com/).
+3. Import your GitHub repository.
+4. Deploy the project.
+
+### Deploy to Netlify
+1. Push your code to GitHub.
+2. Go to [Netlify](https://netlify.com/).
+3. Connect your repository.
+4. Deploy the project.
+
+---
+
+## 🛠 Technologies Used
+- **React + Vite** - Frontend framework and bundler.
+- **TypeScript** - Static type checking.
+- **Tailwind CSS + Shadcn** - Modern and responsive UI design.
+- **Framer Motion** - Smooth page transitions and animations.
+- **React Hook Form + Zod** - Form handling and validation.
+- **LocalStorage** - Persisting events data.
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.
+
+---
+
+## 💬 Contact
+If you have any questions or want to connect:
+- **Twitter:** [@me_safwan_07](https://x.com/me_safwan_07)
+- **GitHub:** [@me-safwan-07](https://github.com/me-safwan-07)
+- **LinkedIn:** [Muhammed Safwan](https://www.linkedin.com/in/muhammedsafwan07/)
+
+---
+
+✨ **Thank you for visiting CommunionHub! 🎉**
+
