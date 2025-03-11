@@ -44,7 +44,7 @@ export const About: React.FC = () => {
               className="text-center"
             >
               <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
-                <section.icon className="h-8 w-8 text-indigo-600" />
+                <section.icon className="h-8 w-8 text-black" />
               </div>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">{section.title}</h2>
               <p className="text-gray-600">{section.description}</p>
